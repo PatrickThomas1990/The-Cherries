@@ -2727,7 +2727,7 @@ body.header-bg {
 
 .entry-meta,
 .entry-meta a {
-	color: #FFFF00;
+	/* color: #FFFF00; */
 	font-weight: normal;
 }
 
