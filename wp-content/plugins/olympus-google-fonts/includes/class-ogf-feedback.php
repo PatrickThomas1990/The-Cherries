@@ -23,30 +23,35 @@ if ( ! class_exists( 'OGF_Feedback' ) ) :
 		 * @var string $slug
 		 */
 		private $slug;
+
 		/**
 		 * Name.
 		 *
 		 * @var string $name
 		 */
 		private $name;
+
 		/**
 		 * Time limit.
 		 *
 		 * @var string $time_limit
 		 */
 		private $time_limit;
+
 		/**
 		 * No Bug Option.
 		 *
 		 * @var string $nobug_option
 		 */
 		public $nobug_option;
+
 		/**
 		 * Activation Date Option.
 		 *
 		 * @var string $date_option
 		 */
 		public $date_option;
+
 		/**
 		 * Class constructor.
 		 *
@@ -66,6 +71,7 @@ if ( ! class_exists( 'OGF_Feedback' ) ) :
 			add_action( 'admin_init', array( $this, 'check_installation_date' ) );
 			add_action( 'admin_init', array( $this, 'set_no_bug' ), 5 );
 		}
+
 		/**
 		 * Seconds to words.
 		 *
@@ -121,6 +127,7 @@ if ( ! class_exists( 'OGF_Feedback' ) ) :
 				return __( 'a second', 'olympus-google-fonts' );
 			}
 		}
+
 		/**
 		 * Check date on admin initiation and add to admin notice if it was more than the time limit.
 		 */
@@ -135,6 +142,7 @@ if ( ! class_exists( 'OGF_Feedback' ) ) :
 				}
 			}
 		}
+
 		/**
 		 * Display the admin notice.
 		 */
@@ -241,13 +249,14 @@ if ( ! class_exists( 'OGF_Feedback' ) ) :
 						</p>
 					</div>
 					<div class="ogf-install-now">
-			<?php printf( '<a href="%1$s" class="button button-primary ogf-install-button" target="_blank">%2$s</a>', esc_url( 'https://wordpress.org/support/view/plugin-reviews/olympus-google-fonts#new-post' ), esc_html__( 'Leave a Review', 'olympus-google-fonts' ) ); ?>
+						<?php printf( '<a href="%1$s" class="button button-primary ogf-install-button" target="_blank">%2$s</a>', esc_url( 'https://wordpress.org/support/view/plugin-reviews/olympus-google-fonts#new-post' ), esc_html__( 'Leave a Review', 'olympus-google-fonts' ) ); ?>
 						<a href="<?php echo esc_url( $no_bug_url ); ?>" class="no-thanks"><?php echo esc_html__( 'No thanks / I already have', 'olympus-google-fonts' ); ?></a>
 					</div>
 				</div>
 			</div>
 			<?php
 		}
+
 		/**
 		 * Set the plugin to no longer bug users if user asks not to be.
 		 */

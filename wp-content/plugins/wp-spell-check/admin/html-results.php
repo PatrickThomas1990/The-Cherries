@@ -180,6 +180,7 @@ function wphc_admin_render() {
 	set_time_limit(600); 
 	global $wpdb;
 	global $ent_included;
+	global $wp_version;
 	$table_name = $wpdb->prefix . "spellcheck_grammar";
 	$options_table = $wpdb->prefix . "spellcheck_options";
 	$error_table = $wpdb->prefix . "spellcheck_html";
@@ -297,7 +298,7 @@ function wphc_admin_render() {
 			<h2><a href="admin.php?page=wp-spellcheck-grammar.php"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/logo.png'; ?>" alt="WP Spell Check" /></a> <span style="position: relative; top: -15px;">Broken Code Scan Results</span></h2>
 			<div class="wpsc-scan-nav-bar">
 				<a href="/wp-admin/admin.php?page=wp-spellcheck.php" id="wpsc-scan-results" name="wpsc-scan-results">Spelling Errors</a>
-				<a href="/wp-admin/admin.php?page=wp-spellcheck-grammar.php" id="wpsc-grammar" name="wpsc-grammar">Grammar</a>
+				<?php if (version_compare( $wp_version, '5.0.0', '<' )) { ?><a href="/wp-admin/admin.php?page=wp-spellcheck-grammar.php" id="wpsc-grammar" name="wpsc-grammar">Grammar</a><?php } ?>
 				<a href="/wp-admin/admin.php?page=wp-spellcheck-seo.php" id="wpsc-empty-fields" name="wpsc-empty-fields">SEO Empty Fields</a>
 				<a href="#" class="selected" id="wpsc-html" name="wpsc-html">Broken Code</a>
 			</div>
@@ -320,8 +321,8 @@ function wphc_admin_render() {
 					<input type="hidden" name="action" value="check">
 					<?php echo "<h3 class='sc-message' style='color: rgb(0, 115, 0);'>Last scan took " . $options_list[146]->option_value . "</h3>"; ?>
 					<?php echo "<h3 class='sc-message' style='color: rgb(0, 115, 0);'>$scan_message</h3><br />"; ?>
-					<?php if ((($post_count + $page_count) > $max_pages) & $ent_included) echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'>You have more than $max_pages Pages/Posts. <a href='https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=&utm_medium=bc_scan&utm_content=7.0.3' target='_blank'>Upgrade</a> to scan all of your website.</h3>" ?>
-					<?php if (!$ent_included) echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'><a href='https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeBroken_code&utm_medium=bc_scan&utm_content=7.0.3' target='_blank'>Upgrade</a> to scan all parts of your website.</h3>"; ?>
+					<?php if ((($post_count + $page_count) > $max_pages) & $ent_included) echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'>You have more than $max_pages Pages/Posts. <a href='https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=&utm_medium=bc_scan&utm_content=7.0.4' target='_blank'>Upgrade</a> to scan all of your website.</h3>" ?>
+					<?php if (!$ent_included) echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'><a href='https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeBroken_code&utm_medium=bc_scan&utm_content=7.0.4' target='_blank'>Upgrade</a> to scan all parts of your website.</h3>"; ?>
 				</div>
 			</form>
 			<div style="float: right; width:23%; margin-left: 2%; margin-top: 50px">
@@ -384,7 +385,7 @@ window.newsletter_check = function (f) {
 </div>
 <hr>
 <div style="padding: 5px 5px 10px 5px; border: 3px solid #0096FF; border-radius: 5px; background: white;">
-				<a href="https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_rightside&utm_medium=html_check&utm_content=7.0.3" target="_blank"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/wp-spellcheck-tutorials.jpg'; ?>" style="max-width: 99%;" alt="Watch WP Spell Check Tutorials" /></a>
+				<a href="https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_rightside&utm_medium=html_check&utm_content=7.0.4" target="_blank"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/wp-spellcheck-tutorials.jpg'; ?>" style="max-width: 99%;" alt="Watch WP Spell Check Tutorials" /></a>
 </div>
 <hr>
 <div style="padding: 5px 5px 10px 5px; border: 3px solid #D60000; border-radius: 5px; background: white; text-align: center;">
@@ -442,7 +443,7 @@ window.newsletter_check = function (f) {
 			<?php } else {
 				echo $pro_error_msg;
 			} ?>
-			<h3><a href="https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeBroken_code&utm_medium=bc_scan&utm_content=7.0.3" target="_blank">Upgrade to pro</a> to find broken HTML and Shortcodes on your website.</h3>
+			<h3><a href="https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeBroken_code&utm_medium=bc_scan&utm_content=7.0.4" target="_blank">Upgrade to pro</a> to find broken HTML and Shortcodes on your website.</h3>
 			<h3 style="color: red;">Examples</h3>
 			<h4>Broken Shortcode</h4>
 			<div>[broken_shortcode setting=1]</div>

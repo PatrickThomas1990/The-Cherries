@@ -1,11 +1,11 @@
 === WP Spell Check ===
 Contributors: wpspellcheck 
 Copyright: © 2018 Persyo
-Donate link: www.wpspellcheck.com/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=donationlink&utm_content=7.0.3
+Donate link: www.wpspellcheck.com/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=donationlink&utm_content=7.0.4
 Tags: spell check, grammar check, proofreading, spell checker, Proofreader, SEO, dyslexia, Website Audit, lorem ipsum, broken code, SEO audit, medical dictionary, broken HTML, Broken shortcode, woocommerce, broken HTML, broken plugins, opendyslexic, dyslexic
 Requires at least: 4.8.0
 Tested up to: 4.9.8
-Stable tag: 7.0.3
+Stable tag: 7.0.4
 Requires PHP: 5.6
 
 Proofread your website with One Click! Find & fix Spelling errors, Grammar errors, Broken HTML & Shortcodes, SEO Empty Fields, and Create a professional image.
@@ -40,7 +40,7 @@ Proofread your website with One Click! Find & fix Spelling errors, Grammar error
 *    If you have a disability that makes reading hard for you and would love a simple solution
 
 
-> Note: some features are included in the Pro version. To get access to WP Spell Check Pro and unlock those features [Click Here](https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=upgrade_notice&utm_content=7.0.3)!
+> Note: some features are included in the Pro version. To get access to WP Spell Check Pro and unlock those features [Click Here](https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=upgrade_notice&utm_content=7.0.4)!
 
 
 **WP Spell Check is for you if you want to...**
@@ -141,13 +141,13 @@ SEO Empty fields are fields on various areas of your website that should be fill
 
 
 
-The FREE plugin only checks contents of pages and posts on your website. For a more extensive check on everything on your website, you can purchase our (premium version) (www.wpspellcheck.com/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.3). The premium version checks your entire website
+The FREE plugin only checks contents of pages and posts on your website. For a more extensive check on everything on your website, you can purchase our (premium version) (www.wpspellcheck.com/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.4). The premium version checks your entire website
 
 
 
 = Reasons to upgrade to "WP Spell Check Pro" =
 
-Save time, and embarrassment and get the benefits listed on (this page)(https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.3)
+Save time, and embarrassment and get the benefits listed on (this page)(https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.4)
 
 
 
@@ -275,7 +275,7 @@ Yes, both the Free Version and the Pro version will be updated together.
 
 
 
-(Visit our website)(https://wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.3) for a complete list. New website components will be added in our future releases. Visit our Facebook and Twitter page for updates.
+(Visit our website)(https://wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.4) for a complete list. New website components will be added in our future releases. Visit our Facebook and Twitter page for updates.
 
 
 
@@ -353,7 +353,7 @@ We more questions answered on our website. Feel free to visit www.wpspellcheck.c
 
 == License ==
 
-Copyright: © 2018 [WP Spell Check](http://www.wpspellcheck.com/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.3) (coded in CANADA)
+Copyright: © 2018 [WP Spell Check](http://www.wpspellcheck.com/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.4) (coded in CANADA)
 
 == Screenshots ==
 
@@ -372,7 +372,15 @@ Copyright: © 2018 [WP Spell Check](http://www.wpspellcheck.com/?utm_source=basep
 13. The WP Spell Check Dashboard Widget
 
 == Changelog ==
-= 7.0.3 =
+= 7.0.4 =
+- Happy new year!
+- Fixed an issue where you could not add words to the ignore list
+- Fixed an issue where you could not add words to the dictionary list
+- Fixed a compatibility issue with the Slider Revolution plugin
+- We are currently working on fixing compatibility with the new Gutenberg editor
+- If you experience any issues or have any suggestions for us, please contact us through our Facebook page. 
+
+= 7.0.4 =
 - Happy Holidays! Save 20% on WP Spell Check. Use code "HOLIDAY2018" at www.wpspellcheck.com
 - Fixed an issue where the plugin did not work properly on a website installed to a subdirectory
 - Fixed an issue where the dashboard widget could display 100% literacy factor
@@ -699,7 +707,7 @@ Copyright: © 2018 [WP Spell Check](http://www.wpspellcheck.com/?utm_source=basep
 
 = 2.2 =
 
-- Added menu for \[tutorials\](https://www.wpspellcheck.com/tutorials/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.3)) on WP Spell Check
+- Added menu for \[tutorials\](https://www.wpspellcheck.com/tutorials/?utm_source=baseplugin&utm_campaign=readmefile&utm_medium=readmefile&utm_content=7.0.4)) on WP Spell Check
 
 
 

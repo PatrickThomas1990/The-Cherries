@@ -326,18 +326,6 @@ function rock_star_fonts_url() {
  *
  * @since Rock Star 0.3
  */
-function rock_star_enqueue_metabox_scripts() {
-    //Scripts
-	wp_enqueue_script( 'rock-star-metabox', trailingslashit( esc_url ( get_template_directory_uri() ) ) . 'js/metabox.min.js', array( 'jquery', 'jquery-ui-tabs' ), '2013-10-05' );
-
-	//CSS Styles
-	wp_enqueue_style( 'rock-star-metabox-tabs', trailingslashit( esc_url ( get_template_directory_uri() ) ) . 'css/metabox-tabs.css' );
-}
-add_action( 'admin_print_scripts-post-new.php', 'rock_star_enqueue_metabox_scripts', 11 );
-add_action( 'admin_print_scripts-post.php', 'rock_star_enqueue_metabox_scripts', 11 );
-add_action( 'admin_print_scripts-page-new.php', 'rock_star_enqueue_metabox_scripts', 11 );
-add_action( 'admin_print_scripts-page.php', 'rock_star_enqueue_metabox_scripts', 11 );
-
 
 /**
  * Default Options.

@@ -2,11 +2,11 @@
 	/*
 	Plugin Name: WP Spell Check
 	Description: The Fastest Proofreading plugin that allows you to find & fix Spelling errors, Grammar errors, Broken HTML & Shortcodes and, SEO Opportunities to Create a professional image and take your site to the next level
-	Version: 7.0.3
+	Version: 7.0.4
 	Author: Persyo
 	Requires at least: 4.1.1
 	Tested up to: 4.9.8
-	Stable tag: 7.0.3
+	Stable tag: 7.0.4
 	License: GPLv2 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	Copyright: © 2018 Persyo
@@ -2120,6 +2120,7 @@
 	function add_menu() {	
 		global $pro_included;
 		global $ent_included;
+		global $wp_version;
 
 		if ($pro_included) {
 			add_menu_page( 'WP Spell Checker', 'WP Spell Check (Pro)', 'manage_options', 'wp-spellcheck.php', 'wpsc_admin_render', plugin_dir_url( __FILE__ ) . 'images/logo-icon-16x16.png');
@@ -2129,7 +2130,7 @@
 			add_menu_page( 'WP Spell Checker', 'WP Spell Check', 'manage_options', 'wp-spellcheck.php', 'wpsc_admin_render', plugin_dir_url( __FILE__ ) . 'images/logo-icon-16x16.png');
 		}
 		add_submenu_page( 'wp-spellcheck.php', 'Spell Check', 'Spell Check', 'manage_options', 'wp-spellcheck.php', 'wpsc_admin_render');
-		add_submenu_page( 'wp-spellcheck.php', 'Grammar', 'Grammar', 'manage_options', 'wp-spellcheck-grammar.php', 'wpgc_render_results');
+		if (version_compare( $wp_version, '5.0.0', '<' )) { add_submenu_page( 'wp-spellcheck.php', 'Grammar', 'Grammar', 'manage_options', 'wp-spellcheck-grammar.php', 'wpgc_render_results'); }
 		add_submenu_page( 'wp-spellcheck.php', 'SEO Empty Fields', 'SEO Empty Fields', 'manage_options', 'wp-spellcheck-seo.php', 'wpsc_admin_empty_render');
 		add_submenu_page( 'wp-spellcheck.php', 'Broken Code', 'Broken Code', 'manage_options', 'wp-spellcheck-html.php', 'wphc_admin_render');
 	}
@@ -2165,11 +2166,11 @@
 		global $ent_included;
 		if (!$ent_included) {
 			global $submenu;
-			$permalink = 'https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=leftsidebar&utm_medium=admin_bar&utm_content=7.0.3';
+			$permalink = 'https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=leftsidebar&utm_medium=admin_bar&utm_content=7.0.4';
 			$submenu['wp-spellcheck.php'][] = array( 'Upgrade to Premium', 'manage_options', $permalink );
 		} else {
 			global $submenu;
-			$permalink = 'https://www.wpspellcheck.com/account?utm_source=baseplugin&utm_campaign=acount_login&utm_medium=pro_version&utm_content=7.0.3';
+			$permalink = 'https://www.wpspellcheck.com/account?utm_source=baseplugin&utm_campaign=acount_login&utm_medium=pro_version&utm_content=7.0.4';
 			$submenu['wp-spellcheck.php'][] = array( 'Account Login', 'manage_options', $permalink );
 		}
 	}
@@ -2260,7 +2261,7 @@ add_action( 'admin_head', 'wpsc_menu_script' );
 		$args = array(
 			'id'    => 'WP_Spell_Check_Tutorials',
 			'title' => 'Online Training',
-			'href'  => 'https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_topbar&utm_medium=admin_bar&utm_content=7.0.3',
+			'href'  => 'https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_topbar&utm_medium=admin_bar&utm_content=7.0.4',
 			'meta'  => array( 'class' => 'wpsc-toolbar-page' ),
 			'parent' => 'WP_Spell_Check'
 		);
@@ -2296,7 +2297,7 @@ add_action( 'admin_head', 'wpse_my_custom_script' );
 
 	function plugin_add_premium_link( $links ) {
 		unset($links['edit']); 
-		$settings_link = '<a href="https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradePlugins_Page&utm_medium=plugin_page&utm_content=7.0.3" target="_blank">' . __( 'Premium Features' ) . '</a>';
+		$settings_link = '<a href="https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradePlugins_Page&utm_medium=plugin_page&utm_content=7.0.4" target="_blank">' . __( 'Premium Features' ) . '</a>';
 		array_push( $links, $settings_link );
 		return $links;
 	}
@@ -2510,17 +2511,32 @@ add_action( 'admin_head', 'wpse_my_custom_script' );
 	function show_review_notice() {
 		global $current_user;
 		global $wpsc_upgrade_show;
+		global $wp_version;
 		$user_id = $current_user->ID;
 		if (!isset($_GET['page'])) $_GET['page'] = '';
 		$page = $_GET['page'];
-
-		if ($page != '') $page = '&page=' . $page;		
+		$pageName = basename($_SERVER['REQUEST_URI']);
+		$action = $_GET['action'];
+			
+		if (version_compare( $wp_version, '5.0.0', '<' )) {
+			if ($page != '') $page = '&page=' . $page;		
 			$loc = "https://www.wpspellcheck.com/api/survey.php";
 			$output = file_get_contents($loc);
 			$output = preg_replace("/\?wpsc_ignore_review_notice=1&page=WPSC-PAGE-LINK/",html_entity_decode( esc_url( add_query_arg( array( 'wpsc_ignore_review_notice' => '1' ) ) ), ENT_QUOTES, 'utf-8'),$output);
 			if (preg_match("/hide-message/m", $output) || $wpsc_upgrade_show) { } else {
 				echo $output;
 			}
+		} else {
+			if ($action != 'edit' && strpos($pageName, 'post-new.php') === false) {
+				if ($page != '') $page = '&page=' . $page;		
+				$loc = "https://www.wpspellcheck.com/api/survey.php";
+				$output = file_get_contents($loc);
+				$output = preg_replace("/\?wpsc_ignore_review_notice=1&page=WPSC-PAGE-LINK/",html_entity_decode( esc_url( add_query_arg( array( 'wpsc_ignore_review_notice' => '1' ) ) ), ENT_QUOTES, 'utf-8'),$output);
+				if (preg_match("/hide-message/m", $output)) { } else {
+					echo $output;
+				}
+			}
+		}
 	}
 	
 	function ignore_review_notice() {
@@ -2614,9 +2630,8 @@ add_action( 'admin_head', 'wpse_my_custom_script' );
 		}
 		
 		if ((current_user_can('manage_options')) && $show_notice && $ignore_review != 'hide') {
-			show_review_notice();
+				show_review_notice();
 		}
-		
 	}
 	add_action('admin_notices', 'check_review_notice');
 	

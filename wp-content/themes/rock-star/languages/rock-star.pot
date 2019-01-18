@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rock Star 1.1\n"
 "Report-Msgid-Bugs-To: https://catchthemes.com/contact-us/\n"
-"POT-Creation-Date: 2018-10-25 22:03+0545\n"
+"POT-Creation-Date: 2019-01-17 19:46+0545\n"
 "PO-Revision-Date: 2017-01-06 14:07+0545\n"
 "Last-Translator: Catch Themes <info@catchthemes.com>\n"
 "Language-Team: Catch Themes <info@catchthemes.com>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-KeywordsList: __;_e;_x;esc_html_e;esc_html__;esc_attr_e;esc_attr__;"
 "_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;"
 "__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
@@ -89,8 +89,8 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: ../content-page.php:37 ../inc/core.php:681 ../inc/core.php:700
-#: ../inc/core.php:826
+#: ../content-page.php:37 ../inc/core.php:669 ../inc/core.php:688
+#: ../inc/core.php:814
 msgid "Edit"
 msgstr ""
 
@@ -148,123 +148,123 @@ msgctxt "Courgette font: on or off"
 msgid "on"
 msgstr ""
 
-#: ../inc/core.php:639
+#: ../inc/core.php:627
 msgid "Post navigation"
 msgstr ""
 
-#: ../inc/core.php:650
+#: ../inc/core.php:638
 msgid "Previous page"
 msgstr ""
 
-#: ../inc/core.php:651
+#: ../inc/core.php:639
 msgid "Next page"
 msgstr ""
 
-#: ../inc/core.php:652 ../inc/customizer-includes/news-ticker.php:129
+#: ../inc/core.php:640 ../inc/customizer-includes/news-ticker.php:129
 #: ../inc/default-options.php:197 ../inc/default-options.php:227
 #: ../inc/default-options.php:318
 msgid "Page"
 msgstr ""
 
-#: ../inc/core.php:657
+#: ../inc/core.php:645
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
-#: ../inc/core.php:658
+#: ../inc/core.php:646
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: ../inc/core.php:681
+#: ../inc/core.php:669
 msgid "Pingback:"
 msgstr ""
 
-#: ../inc/core.php:691
+#: ../inc/core.php:679
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr ""
 
-#: ../inc/core.php:697
+#: ../inc/core.php:685
 #, php-format
 msgctxt "1: date, 2: time"
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: ../inc/core.php:704
+#: ../inc/core.php:692
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: ../inc/core.php:807 ../inc/core.php:917
+#: ../inc/core.php:795 ../inc/core.php:905
 msgctxt "Used before publish date."
 msgid "<span class=\"screen-reader-text\">Posted on</span>"
 msgstr ""
 
-#: ../inc/core.php:814 ../inc/core.php:926
+#: ../inc/core.php:802 ../inc/core.php:914
 msgctxt "Used before post author name."
 msgid "<span class=\"screen-reader-text\">Author</span>"
 msgstr ""
 
-#: ../inc/core.php:822
+#: ../inc/core.php:810
 msgid "Leave a comment"
 msgstr ""
 
-#: ../inc/core.php:822
+#: ../inc/core.php:810
 msgid "1 Comment"
 msgstr ""
 
-#: ../inc/core.php:822
+#: ../inc/core.php:810
 msgid "% Comments"
 msgstr ""
 
-#: ../inc/core.php:843 ../inc/core.php:851 ../inc/core.php:883 ../inc/core.php:893
+#: ../inc/core.php:831 ../inc/core.php:839 ../inc/core.php:871 ../inc/core.php:881
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ""
 
-#: ../inc/core.php:846 ../inc/core.php:886
+#: ../inc/core.php:834 ../inc/core.php:874
 msgctxt "Used before category names."
 msgid "<span class=\"screen-reader-text\">Categories</span>"
 msgstr ""
 
-#: ../inc/core.php:854 ../inc/core.php:896
+#: ../inc/core.php:842 ../inc/core.php:884
 msgctxt "Used before tag names."
 msgid "<span class=\"screen-reader-text\">Tags</span>"
 msgstr ""
 
-#: ../inc/core.php:1407
+#: ../inc/core.php:1395
 msgid "Y"
 msgstr ""
 
-#: ../inc/core.php:1414
+#: ../inc/core.php:1402
 #, php-format
 msgctxt "1: Year, 2: Site Title with home URL, 3: Privacy Policy Link"
 msgid "Copyright &copy; %1$s %2$s. All Rights Reserved. %3$s"
 msgstr ""
 
-#: ../inc/core.php:1414
+#: ../inc/core.php:1402
 msgid "by"
 msgstr ""
 
-#: ../inc/core.php:1475
+#: ../inc/core.php:1463
 msgid "Scroll Up"
 msgstr ""
 
-#: ../inc/core.php:1490
+#: ../inc/core.php:1478
 msgid "Posted on"
 msgstr ""
 
-#: ../inc/core.php:1495
+#: ../inc/core.php:1483
 msgid "By"
 msgstr ""
 
-#: ../inc/core.php:1595
+#: ../inc/core.php:1583
 msgid "Next post:"
 msgstr ""
 
-#: ../inc/core.php:1598
+#: ../inc/core.php:1586
 msgid "Previous post:"
 msgstr ""
 
-#: ../inc/core.php:1639 ../inc/customizer-includes/custom-controls.php:36
+#: ../inc/core.php:1627 ../inc/customizer-includes/custom-controls.php:36
 msgid ""
 "Hold down the Ctrl (windows) / Command (Mac) button to select multiple options."
 msgstr ""
@@ -580,7 +580,7 @@ msgstr ""
 msgid "Select Categories"
 msgstr ""
 
-#: ../inc/customizer-includes/theme-options.php:167 ../inc/metabox.php:87
+#: ../inc/customizer-includes/theme-options.php:167 ../inc/metabox.php:83
 msgid "Layout Options"
 msgstr ""
 
@@ -1003,7 +1003,7 @@ msgstr ""
 msgid "Cloud"
 msgstr ""
 
-#: ../inc/default-options.php:534 ../inc/widgets/tours.php:217
+#: ../inc/default-options.php:534 ../inc/widgets/tours.php:224
 msgid "Link"
 msgstr ""
 
@@ -1060,15 +1060,15 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: ../inc/metabox.php:88
+#: ../inc/metabox.php:100
 msgid "Header Featured Image Options"
 msgstr ""
 
-#: ../inc/metabox.php:89
-msgid "Single Page/Post Image Layout "
+#: ../inc/metabox.php:117
+msgid "Single Page/Post Image Layout"
 msgstr ""
 
-#: ../inc/metabox.php:215
+#: ../inc/metabox.php:180
 msgid "Rock Star Options"
 msgstr ""
 
@@ -1094,7 +1094,7 @@ msgstr ""
 
 #: ../inc/widgets/about.php:69 ../inc/widgets/featured-posts.php:69
 #: ../inc/widgets/instagram.php:58 ../inc/widgets/tag-cloud.php:62
-#: ../inc/widgets/tours.php:65 ../inc/widgets/tours.php:102
+#: ../inc/widgets/tours.php:65 ../inc/widgets/tours.php:103
 #: ../inc/widgets/video-embed.php:66
 msgid "Title"
 msgstr ""
@@ -1487,57 +1487,58 @@ msgstr ""
 msgid "Please save the widget once No. of items is changed to reflect the changes"
 msgstr ""
 
-#: ../inc/widgets/tours.php:99
+#: ../inc/widgets/tours.php:100
 #, php-format
 msgid "%1s. Tour Details"
 msgstr ""
 
-#: ../inc/widgets/tours.php:112
+#: ../inc/widgets/tours.php:113
 msgid "Date"
 msgstr ""
 
-#: ../inc/widgets/tours.php:122
+#: ../inc/widgets/tours.php:123
 msgid "Address"
 msgstr ""
 
-#: ../inc/widgets/tours.php:132
+#: ../inc/widgets/tours.php:133
 msgid "Link 1"
 msgstr ""
 
-#: ../inc/widgets/tours.php:142
+#: ../inc/widgets/tours.php:143
 msgid "Link Text 1"
 msgstr ""
 
-#: ../inc/widgets/tours.php:152
+#: ../inc/widgets/tours.php:153
 msgid "Link 2"
 msgstr ""
 
-#: ../inc/widgets/tours.php:162
+#: ../inc/widgets/tours.php:163
 msgid "Link Text 2"
 msgstr ""
 
-#: ../inc/widgets/tours.php:172
+#: ../inc/widgets/tours.php:173
 msgid "Link 3"
 msgstr ""
 
-#: ../inc/widgets/tours.php:182
+#: ../inc/widgets/tours.php:183
 msgid "Link Text 3"
 msgstr ""
 
-#: ../inc/widgets/tours.php:192
+#: ../inc/widgets/tours.php:193
 msgid "Link 4"
 msgstr ""
 
-#: ../inc/widgets/tours.php:202
+#: ../inc/widgets/tours.php:203
 msgid "Link Text 4"
 msgstr ""
 
-#: ../inc/widgets/tours.php:227
-msgid "Link Text"
+#: ../inc/widgets/tours.php:213 ../inc/widgets/tours.php:244
+#: ../inc/widgets/video-embed.php:120
+msgid "Check to open link in new tab/window"
 msgstr ""
 
-#: ../inc/widgets/tours.php:237 ../inc/widgets/video-embed.php:120
-msgid "Check to open link in new tab/window"
+#: ../inc/widgets/tours.php:234
+msgid "Link Text"
 msgstr ""
 
 #: ../inc/widgets/video-embed.php:42

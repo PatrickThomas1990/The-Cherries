@@ -6,6 +6,7 @@ function wpsc_admin_empty_render() {
 	global $wpdb;
 	global $ent_included;
 	global $base_page_max;
+	global $wp_version;
 	$table_name = $wpdb->prefix . "spellcheck_words";
 	$empty_table = $wpdb->prefix . "spellcheck_empty";
 	$options_table = $wpdb->prefix . "spellcheck_options";
@@ -598,7 +599,7 @@ function wpsc_admin_empty_render() {
 		<h2><a href="admin.php?page=wp-spellcheck-seo.php"><img src="<?php echo plugin_dir_url( __FILE__ ) . '../images/logo.png'; ?>" alt="WP Spell Check" /></a> <span style="position: relative; top: -15px;">Scan Results</span></h2>
 			<div class="wpsc-scan-nav-bar">
 				<a href="<?php echo admin_url(); ?>admin.php?page=wp-spellcheck.php" id="wpsc-scan-results" name="wpsc-scan-results">Spelling Errors</a>
-				<a href="<?php echo admin_url(); ?>admin.php?page=wp-spellcheck-grammar.php" id="wpsc-grammar" name="wpsc-grammar">Grammar</a>
+				<?php if (version_compare( $wp_version, '5.0.0', '<' )) { ?><a href="/wp-admin/admin.php?page=wp-spellcheck-grammar.php" id="wpsc-grammar" name="wpsc-grammar">Grammar</a><?php } ?>
 				<a href="#empty-fields" id="wpsc-empty-fields" class="selected" name="wpsc-empty-fields">SEO Empty Fields</a>
 				<a href="<?php echo admin_url(); ?>admin.php?page=wp-spellcheck-html.php" id="wpsc-grammar" name="wpsc-grammar">Broken Code</a>
 			</div>
@@ -637,7 +638,7 @@ function wpsc_admin_empty_render() {
 				<?php echo "<h3 class='sc-message' style='color: rgb(0, 115, 0);'>$empty_scan_message</h3><br />"; ?>
 				<?php if (!$ent_included) {
 					if ($empty_count > 0 && $empty_words > 0) {
-						echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'>" . $empty_words . " Errors were found on other parts of your website. <a href='https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeSEO&utm_medium=seo_scan&utm_content=7.0.3' target='_blank'>Click here</a> to upgrade to find and fix all errors.</h3>";
+						echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'>" . $empty_words . " Errors were found on other parts of your website. <a href='https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeSEO&utm_medium=seo_scan&utm_content=7.0.4' target='_blank'>Click here</a> to upgrade to find and fix all errors.</h3>";
 					} else {
 						//echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'><a href='https://www.wpspellcheck.com/features' target='_blank'>Upgrade</a> to scan all parts of your website.</h3>";
 					}
@@ -683,7 +684,7 @@ window.newsletter_check = function (f) {
 </div>
 <hr>
 <div style="padding: 5px 5px 10px 5px; border: 3px solid #0096FF; border-radius: 5px; background: white;">
-				<a href="https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_rightside&utm_medium=empty_fields&utm_content=7.0.3" target="_blank"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/wp-spellcheck-tutorials.jpg'; ?>" style="max-width: 99%;" alt="Watch WP Spell Check Tutorials" /></a>
+				<a href="https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_rightside&utm_medium=empty_fields&utm_content=7.0.4" target="_blank"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/wp-spellcheck-tutorials.jpg'; ?>" style="max-width: 99%;" alt="Watch WP Spell Check Tutorials" /></a>
 </div>
 <hr>
 <div style="padding: 5px 5px 10px 5px; border: 3px solid #D60000; border-radius: 5px; background: white; text-align: center;">

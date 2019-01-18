@@ -78,6 +78,7 @@
 	global $pro_included;
 	global $ent_included;
 	global $key_valid;
+	global $wp_version;
 	$table_name = $wpdb->prefix . 'spellcheck_options';
 	$ignore_table = $wpdb->prefix . 'spellcheck_ignore';
 	$grammar_table = $wpdb->prefix . 'spellcheck_grammar_options';
@@ -563,7 +564,7 @@
 			<div class="wpsc-scan-nav-bar" style="width: 75%;">
 				<a href="#general-options" id="wpsc-general-options" <?php if ($_POST['wpsc-scan-tab'] != 'scan' && $_POST['wpsc-scan-tab'] != 'empty' && $_POST['wpsc-scan-tab'] != 'grammar' && $_POST['wpsc-scan-tab'] != 'accessibility') echo 'class="selected"';?> name="wpsc-general-options">General Settings</a>
 				<a href="#scan-options" id="wpsc-scan-options" <?php if ($_POST['wpsc-scan-tab'] == 'scan') echo 'class="selected"';?> name="wpsc-scan-options">Spell Check Options</a>
-				<a href="#grammar-options" id="wpsc-grammar-options" <?php if ($_POST['wpsc-scan-tab'] == 'grammar') echo 'class="selected"';?> name="wpsc-grammar-options">Grammar Options</a>
+				<?php if (version_compare( $wp_version, '5.0.0', '<' )) { ?><a href="#grammar-options" id="wpsc-grammar-options" <?php if ($_POST['wpsc-scan-tab'] == 'grammar') echo 'class="selected"';?> name="wpsc-grammar-options">Grammar Options</a><?php } ?>
 				<a href="#empty-options" id="wpsc-empty-options" <?php if ($_POST['wpsc-scan-tab'] == 'empty') echo 'class="selected"';?> name="wpsc-empty-options">SEO Opportunities Options<span style="font-size: 8px;"></span></a>
 				<a href="#accessibility-options" id="wpsc-accessibility-options" <?php if ($_POST['wpsc-scan-tab'] == 'accessibility') echo 'class="selected"';?> name="wpsc-accessibility-options">Accessibility Options<span style="font-size: 8px;"></span></a>
 			</div>
@@ -656,7 +657,7 @@
 				<td scope="row" align="left"><input class="ignore-check-all" type="checkbox" name="ignore-emails" value="ignore-emails" <?php if ($ignore_emails == 'true') echo 'checked'; ?>>Ignore Email Addresses</td></tr>
 				<tr><td scope="row" align="left"><input class="ignore-check-all" type="checkbox" name="ignore-websites" value="ignore-websites" <?php if ($ignore_websites == 'true') echo 'checked'; ?>>Ignore Website URLs</td>
 				<td scope="row" align="left"><input <?php if (!$pro_included && !$ent_included) echo "disabled" ?> class="ignore-check-all" type="checkbox" name="highlight-words" value="highlight-words" <?php if ($highlight_words == 'true' && ($pro_included || $ent_included)) echo 'checked'; ?>>Highlight Misspelled Words (For logged in admin only)<?php if (!$pro_included && !$ent_included) echo "<span class='wpsc-mouseover-pro-feature' style='border-radius: 29px; border: 1px solid green; display: inline-block; margin-left: 10px; padding: 4px 10px; cursor: help;'>?<span class='wpsc-mouseover-text-pro-feature'>This is a pro version feature</span></span>"; ?></td></tr>
-					<tr style="background: white;"><td colspan="3"><h3 style="color: red;"><a href="https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeoptions&utm_medium=spellcheck_options&utm_content=7.0.3" target="_blank">Upgrade to Pro</a> to scan the following</h3></td></tr>
+					<tr style="background: white;"><td colspan="3"><h3 style="color: red;"><a href="https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeoptions&utm_medium=spellcheck_options&utm_content=7.0.4" target="_blank">Upgrade to Pro</a> to scan the following</h3></td></tr>
 					<tr style="background: white;"><td>WordPress Menus</td><td>Page Titles</td><td>Post Titles</td></tr>
 					<tr style="background: white;"><td>Tags</td><td>Tag Descriptions</td><td>Tag Slugs</td></tr>
 					<tr style="background: white;"><td>Category Slugs</td><td>Categories</td><td>Category Descriptions</td></tr>
@@ -688,7 +689,7 @@
 				<tr><td scope="row" align="left" style="width: 33%;"><input type="checkbox" name="check-authors-empty" value="check-authors" <?php if ($check_authors_empty == 'true') echo 'checked'; ?>>Authors</td>
 					<td scope="row" align="left" style="width: 33%;"><input type="checkbox" name="check-page-titles-empty" value="check-page-titles" <?php if ($check_page_titles_empty == 'true') echo 'checked'; ?>>Page Titles</td>
 					<td scope="row" align="left" style="width: 33%;"><input type="checkbox" name="check-post-titles-empty" value="check-post-titles" <?php if ($check_post_titles_empty == 'true') echo 'checked'; ?>>Post Titles</td></tr>
-					<tr style="background: white;"><td colspan="3"><h3 style="color: red;"><a href="https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeoptions&utm_medium=seo_options&utm_content=7.0.3" target="_blank">Upgrade to Pro</a> to scan the following</h3></td></tr>
+					<tr style="background: white;"><td colspan="3"><h3 style="color: red;"><a href="https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradeoptions&utm_medium=seo_options&utm_content=7.0.4" target="_blank">Upgrade to Pro</a> to scan the following</h3></td></tr>
 					<tr style="background: white;"><td>WordPress Menus</td><td>Tag Descriptions</td><td>Category Descriptions</td></tr>
 					<tr style="background: white;"><td>Page SEO</td><td>Post SEO</td><td>Media Files SEO</td></tr>
 					<tr style="background: white;"><td>Media Files</td><td colspan="2">WooCommerce and WP-eCommerce Products</td></tr>
@@ -788,7 +789,7 @@ window.newsletter_check = function (f) {
 </div>
 <hr>
 <div style="padding: 5px 5px 10px 5px; border: 3px solid #0096FF; border-radius: 5px; background: white;">
-				<a href="https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_rightside&utm_medium=options&utm_content=7.0.3" target="_blank"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/wp-spellcheck-tutorials.jpg'; ?>" style="max-width: 99%;" alt="Watch WP Spell Check Tutorials" /></a>
+				<a href="https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_rightside&utm_medium=options&utm_content=7.0.4" target="_blank"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/wp-spellcheck-tutorials.jpg'; ?>" style="max-width: 99%;" alt="Watch WP Spell Check Tutorials" /></a>
 </div>
 <hr>
 <div style="padding: 5px 5px 10px 5px; border: 3px solid #D60000; border-radius: 5px; background: white; text-align: center;">

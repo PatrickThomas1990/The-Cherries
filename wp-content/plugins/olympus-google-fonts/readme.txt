@@ -1,10 +1,11 @@
 === Google Fonts for WordPress ===
 Contributors: DannyCooper, googlefonts
 Tags: google, fonts, google fonts, google fonts for wordpress, gutenberg
+Donate link: https://fontsplugin.com/#pricing
 Requires at least: 4.0
 Tested up to: 5.0
 License: GPLv2 or later
-Stable tag: 1.4.3
+Stable tag: 1.4.8
 
 The easiest to use Google Fonts plugin. No coding required. 870+ font choices.
 
@@ -79,6 +80,29 @@ We are 99.99% certain it will, if it doesn't then please create a [support ticke
 3. Customizer Settings Font Weight and Style - Google Fonts for WordPress
 
 == Changelog ==
+
+= 1.4.8 =
+
+* Improve theme compatibility
+* Update .pot
+
+= 1.4.7 =
+
+* Fix conflict with Kirki
+
+= 1.4.6 =
+
+* Improve theme compatibility
+* Optimize block code
+* Update translation files
+
+= 1.4.5 =
+
+* Fix subset issue in 1.4.4
+
+= 1.4.4 =
+
+* Update fonts
 
 = 1.4.3 =
 

@@ -111,6 +111,12 @@
 							link.focus();
 						}
 					});
+					
+					$('.wpsc-close-survey').click(function(event) {
+							popup.hide();
+							isOpen = false;
+							link.focus();
+					});
 				});
 			</script>
 			<?php
@@ -215,6 +221,7 @@
 			<div class="wpsc_survey_modal" id="wpsc_survey_modal">
 				<div class="wpsc_survey_wrapper">
 						<form class="wpsc_survey_form">
+						<a href="#" class="wpsc-close-survey" style="float: right; text-decoration: none; font-weight: bold;">X</a>
 						<span class="wpsc_survey_title">Plugin Feedback</span>
 						<span class="wpsc_survey_desc">Please share why you are deactivating WP Spell Check</span>
 						<div class="wpsc_survey_options">
@@ -225,16 +232,7 @@
 							<label for="wpsc_survey_option_not_working" class="wpsc_survey_label">
 								<input id="wpsc_survey_option_not_working" class="wpsc_survey_option_input" type="radio" name="opt" value="Not Working on my Site" />
 								<span class="wpsc_survey_option_reason">It is not working on my site</span>
-								<div class="wpsc_survey_option_details">Would you like us to contact you to fix this issue?<br />
-									<label for="wpsc_survey_option_contact_yes" class="wpsc_survey_label_further">
-										<input id="wpsc_survey_option_contact_yes" class="wpsc_survey_option_input" type="radio" name="contact" value="Yes">
-										<span class="wpsc_survey_option_reason_yes">Yes</span><br />
-									</label>
-									<label for="wpsc_survey_option_contact_no" class="wpsc_survey_label_further">
-										<input id="wpsc_survey_option_contact_no" class="wpsc_survey_option_input" type="radio" name="contact" value="No">
-										<span class="wpsc_survey_option_reason_no">No</span><br />
-									</label>
-									<div class="wpsc-contact-form"><a href="https://www.wpspellcheck.com/report-an-issue?utm_source=baseplugin&utm_campaign=plugindeac&utm_content=6.8.4" target="_blank">Click Here</a> to get in touch with us</div>
+								<div class="wpsc_survey_option_details">Get 1 year free of Pro subscription by sharing your experience<br>with our CEO for 15 minutes <a href="https://meetings.hubspot.com/info2677" target="_blank">Click here to Get Started</a>
 								</div>
 							</label>
 							<?php
@@ -243,7 +241,7 @@
 							<label for="wpsc_survey_option_dont_know" class="wpsc_survey_label">
 								<input id="wpsc_survey_option_dont_know" class="wpsc_survey_option_input" type="radio" name="opt" value="Don't know what it does" />
 								<span class="wpsc_survey_option_reason">It is confusing as to how the plugin works</span>
-								<div class="wpsc_survey_option_details">You may check out our <strong>free video tutorials</strong> for WP Spell Check <a href="https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=plugindeac&utm_content=6.8.4" target="_blank">here</a></div>
+								<div class="wpsc_survey_option_details">Get 1 year free of Pro subscription by sharing your experience<br>with our CEO for 15 minutes <a href="https://meetings.hubspot.com/info2677" target="_blank">Click here to Get Started</a></div>
 							</label>
 							<?php
 								} elseif ($number == 3) {
@@ -251,6 +249,7 @@
 							<label for="wpsc_survey_option_no_need" class="wpsc_survey_label">
 								<input id="wpsc_survey_option_no_need" class="wpsc_survey_option_input" type="radio" name="opt" value="No longer need the plugin" />
 								<span class="wpsc_survey_option_reason">I no longer need the plugin</span>
+								<div class="wpsc_survey_option_details">Get 1 year free of Pro subscription by sharing your experience<br>with our CEO for 15 minutes <a href="https://meetings.hubspot.com/info2677" target="_blank">Click here to Get Started</a></div>
 							</label>
 							<?php
 								} elseif ($number == 4) {
@@ -258,6 +257,7 @@
 							<label for="wpsc_survey_option_temp" class="wpsc_survey_label">
 								<input id="wpsc_survey_option_temp" class="wpsc_survey_option_input" type="radio" name="opt" value="Temporary disable" />
 								<span class="wpsc_survey_option_reason">This is temporary, I will reactivate soon</span>
+								<div class="wpsc_survey_option_details">Get 1 year free of Pro subscription by sharing your experience<br>with our CEO for 15 minutes <a href="https://meetings.hubspot.com/info2677" target="_blank">Click here to Get Started</a></div>
 							</label>
 							<?php
 								}

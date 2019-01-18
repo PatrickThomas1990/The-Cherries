@@ -356,7 +356,7 @@ function wpgc_render_results() {
 					<?php echo "<h3 class='sc-message' style='color: rgb(0, 115, 0);'>$scan_message</h3><br />"; ?>
 					<?php if (!$ent_included) {
 						if ($options_list[6]->option_value > 0 && !$ent_included) {
-							echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'>Errors were found on other parts of your website. <a href='https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradegram&utm_medium=grammar_scan&utm_content=7.0.3' target='_blank'>Click here</a> to upgrade to find and fix all errors.</h3>";
+							echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'>Errors were found on other parts of your website. <a href='https://www.wpspellcheck.com/features/?utm_source=baseplugin&utm_campaign=upgradegram&utm_medium=grammar_scan&utm_content=7.0.4' target='_blank'>Click here</a> to upgrade to find and fix all errors.</h3>";
 						} else {
 							//echo "<h3 class='sc-message' style='color: rgb(225, 0, 0);'><a href='https://www.wpspellcheck.com/features' target='_blank'>Upgrade</a> to scan all parts of your website.</h3>";
 						}
@@ -423,7 +423,7 @@ window.newsletter_check = function (f) {
 </div>
 <hr>
 <div style="padding: 5px 5px 10px 5px; border: 3px solid #0096FF; border-radius: 5px; background: white;">
-				<a href="https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_rightside&utm_medium=grammar_check&utm_content=7.0.3" target="_blank"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/wp-spellcheck-tutorials.jpg'; ?>" style="max-width: 99%;" alt="Watch WP Spell Check Tutorials" /></a>
+				<a href="https://www.wpspellcheck.com/tutorials?utm_source=baseplugin&utm_campaign=toturial_rightside&utm_medium=grammar_check&utm_content=7.0.4" target="_blank"><img src="<?php echo plugin_dir_url( __FILE__ ) . 'images/wp-spellcheck-tutorials.jpg'; ?>" style="max-width: 99%;" alt="Watch WP Spell Check Tutorials" /></a>
 </div>
 <hr>
 <div style="padding: 5px 5px 10px 5px; border: 3px solid #D60000; border-radius: 5px; background: white; text-align: center;">

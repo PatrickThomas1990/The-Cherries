@@ -1,0 +1,30 @@
+2019-01-05T00:18:23+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/woocommerce-login-popup-and-shortcodes/includes/shortcodes.php:42
+Stack trace:
+#0 /Applications/MAMP/htdocs/The Cherries/wp-includes/shortcodes.php(319): woo_login_styler_display_sc('', '', 'woo-login-popup')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /Applications/MAMP/htdocs/The Cherries/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(woo\\-l...', 'do_shortcode_ta...', '\n[woo-login-pop...')
+#3 /Applications/MAMP/htdocs/The Cherries/wp-includes/class-wp-hook.php(286): do_shortcode('\n[woo-login-pop...')
+#4 /Applications/MAMP/htdocs/The Cherries/wp-includes/plugin.php(203): WP_Hook->apply_filters('\n[woo-login-pop...', Array)
+#5 /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/wordpress-seo/admin/links/class-link-watcher.php(117): apply_filters('the_content', '<!-- wp:paragra...')
+#6 /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/wordpress-seo/adm in /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/woocommerce-login-popup-and-shortcodes/includes/shortcodes.php on line 42
+
+2019-01-05T00:18:24+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/woocommerce-login-popup-and-shortcodes/includes/shortcodes.php:42
+Stack trace:
+#0 /Applications/MAMP/htdocs/The Cherries/wp-includes/shortcodes.php(319): woo_login_styler_display_sc('', '', 'woo-login-popup')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /Applications/MAMP/htdocs/The Cherries/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(woo\\-l...', 'do_shortcode_ta...', '\n[woo-login-pop...')
+#3 /Applications/MAMP/htdocs/The Cherries/wp-includes/class-wp-hook.php(286): do_shortcode('\n[woo-login-pop...')
+#4 /Applications/MAMP/htdocs/The Cherries/wp-includes/plugin.php(203): WP_Hook->apply_filters('\n[woo-login-pop...', Array)
+#5 /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/wordpress-seo/admin/links/class-link-watcher.php(117): apply_filters('the_content', '<!-- wp:paragra...')
+#6 /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/wordpress-seo/adm in /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/woocommerce-login-popup-and-shortcodes/includes/shortcodes.php on line 42
+
+2019-01-05T01:21:43+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/woocommerce-login-popup-and-shortcodes/includes/shortcodes.php:42
+Stack trace:
+#0 /Applications/MAMP/htdocs/The Cherries/wp-includes/shortcodes.php(319): woo_login_styler_display_sc('', '', 'woo-login-popup')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /Applications/MAMP/htdocs/The Cherries/wp-includes/shortcodes.php(197): preg_replace_callback('/\\[(\\[?)(woo\\-l...', 'do_shortcode_ta...', '\n[woo-login-pop...')
+#3 /Applications/MAMP/htdocs/The Cherries/wp-includes/class-wp-hook.php(286): do_shortcode('\n[woo-login-pop...')
+#4 /Applications/MAMP/htdocs/The Cherries/wp-includes/plugin.php(203): WP_Hook->apply_filters('\n[woo-login-pop...', Array)
+#5 /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/wordpress-seo/admin/links/class-link-watcher.php(117): apply_filters('the_content', '<!-- wp:paragra...')
+#6 /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/wordpress-seo/adm in /Applications/MAMP/htdocs/The Cherries/wp-content/plugins/woocommerce-login-popup-and-shortcodes/includes/shortcodes.php on line 42
+

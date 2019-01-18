@@ -41,7 +41,7 @@ class Olympus_Google_Fonts {
 		include OGF_DIR_PATH . 'includes/class-ogf-fonts.php';
 
 		// Required files for the customizer settings.
-		require OGF_DIR_PATH . 'includes/customizer/class-ogf-customize-panel.php';
+		require OGF_DIR_PATH . 'includes/customizer/panels.php';
 		include OGF_DIR_PATH . 'includes/customizer/settings.php';
 		include OGF_DIR_PATH . 'includes/customizer/output-css.php';
 
@@ -112,7 +112,7 @@ class Olympus_Google_Fonts {
 	public function links( $links ) {
 
 		// Customizer Settings Link.
-		$customizer_url = admin_url( 'customize.php?autofocus[panel]=olympus_google_fonts' );
+		$customizer_url = admin_url( 'customize.php?autofocus[panel]=ogf_google_fonts' );
 
 		$settings_link = '<a href="' . esc_url( $customizer_url ) . '">' . esc_html__( 'Settings', 'olympus-google-fonts' ) . '</a>';
 
@@ -135,7 +135,6 @@ class Olympus_Google_Fonts {
 	public function remove_pro_sections( $wp_customize ) {
 		$wp_customize->remove_section( 'ogf_custom' );
 		$wp_customize->remove_section( 'ogf_advanced__custom' );
-		$wp_customize->remove_section( 'ogf_font_loading' );
 	}
 
 }

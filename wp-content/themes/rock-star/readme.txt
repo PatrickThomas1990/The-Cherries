@@ -1,64 +1,46 @@
 === Rock Star ===
+Contributors: catchthemes
+Tags: blog, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, front-page-post-form, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+Requires at least: 4.8
+Tested up to: 5.0.3
+Stable tag: 1.6.2
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Rock Star is an incredibly sleek and responsive music WordPress theme, built for artists, musician and bands aiming to promote their music and events.
+
+== Description ==
 
 Rock Star is an incredibly sleek and responsive music WordPress theme, built for artists, musician and bands aiming to promote their music and events. Created using HTML5 and CSS3, this aesthetically engaging music WordPress theme is very easy to use. Simple modules and features are available so you can build a complete and custom music website right away. Knowing the importance of the vast potential of social media, Rock Star allows you to update your followers regarding any activity, track release or event using the integrated social media support option. Its homepage is dominated by your logo, tagline, and a full-screen background image. With features like layouts, news ticker, featured content, featured slider, tours, breadcrumb, videos, social icons and instagram images gives you plenty of customizing power. This theme is translation ready. Check out Theme Instructions at https://catchthemes.com/theme-instructions/rock-star/, Support at https://catchthemes.com/support/ and Demo at https://catchthemes.com/demo/rock-star/
 
+For more information about Rockstar please go to https://catchthemes.com/themes/rock-star-pro/
 
-== Support ==
+== Installation ==
 
-Support: https://catchthemes.com/support/
-Support Forum: https://catchthemes.com/support-forum/forum/rock-star-free/
+1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+2. Type in Rockstar in the search form and press the 'Enter' key on your keyboard.
+3. Click on the 'Activate' button to use your new theme right away.
+4. Go to https://catchthemes.com/theme-instructions/rock-star/ for a guide on how to customize this theme.
+5. Navigate to Appearance -> Customize in your admin panel and customize to taste.
 
+== Frequently Asked Questions ==
+
+= Does this theme support any plugins? =
+
+Theme supports all plugins from catchplugins.com and WooCommerce Plugin.
+
+= Where can I find theme documentation? =
+
+You can check our Theme Instructions at https://catchthemes.com/themes/rock-star-pro in the Theme Instructions Tab.
+
+= Where can I find theme demo? =
+
+You can check our Theme Demo at https://catchthemes.com/demo/rock-star/
 
 == Translation ==
 
 Rock Star theme is translation ready.
 Added Translation for French by Patrice ( Email: contact@drnradio.net )
-
-
-== License ==
-Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License Version 3, see file license.txt
-License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Rock Star WordPress Theme, Copyright 2016 Catchthemes.com
-Rock Star is distributed under the terms of the GNU General Public License v3
-
-Rock Star is based on Catch Base Pro theme https://catchthemes.com/themes/catch-base-pro/
-
-
-Images used are released under the CC0 license
-1. Screenshot Image
-    https://unsplash.com/photos/FgKuQ-ImdSE
-2. Slider Images
-    - slider-01-1920x1080.jpg: screenshot image
-    - slider-02-1920x1080.jpg: https://pixabay.com/en/guitar-classical-guitar-756326/
-3. Featured Content Images
-    - blog-01-420x280.jpg: https://pixabay.com/en/guitar-classical-guitar-756326/
-    - blog-02-420x280.jpg: https://pixabay.com/en/shoes-depend-leash-sky-beautiful-93756/
-    - blog-03-420x280.jpg: https://unsplash.com/photos/C1tnzdAmPE8
-4. Default Header Image
-    - header-1920x600.jpg: https://unsplash.com/photos/GrIty4BNJEE
-5. Background Images
-    - Dark and light: background-light-1920x1080.jpg and background-dark-1920x1080.jpg
-        - https://pixabay.com/en/music-locally-hamburg-harbor-locally-1286816/
-6. Audio Widget image
-    - audio-image-180x180.jpg: https://pixabay.com/en/guitar-music-sound-show-band-907654/
-7. All other images are self shot image by (CatchThemes.com)
-
-Font Icons
-    Genericons by Automattic, Inc.
-    Genericons is Licensed under the GPL, version 2 or later
-    http://genericons.com/
-
-JS Files
-    HTML5-Shiv is Licensed under the MIT and GPL licenses
-    https://code.google.com/p/html5shiv/
-
-    jQuery Cycle 2 is Licensed under the MIT and GPL licenses
-    http://jquery.malsup.com/cycle2/
-
-    fitvids is Licensed under the  WTFPL license
-    http://fitvidsjs.com/
-
 
 == Getting Started ==
 
@@ -171,12 +153,16 @@ Number:
     This will initiate Skype to call phone number 14044627491
 
 
-= Theme Instructions =
+= More FAQ =
 
-For detail instructions, check out theme instructions page at https://catchthemes.com/theme-instructions/rock-star/
-
+For more FAQs, visit https://catchthemes.com/frequently-asked-questions/
 
 == Change Log ==
+
+= 1.6.2 (Released: January 17, 2019) =
+* Added: Open in New tab check box option in CT:Tours widget
+* Updated: Metabox UI
+* Updated: Readme file as per new requirement
 
 = 1.6.1 (Released: October 25, 2018) =
 * Bug Fixed: News Ticker Position (Reported by ravanh)
@@ -280,3 +266,45 @@ For detail instructions, check out theme instructions page at https://catchtheme
 
 = 0.1 =
 * Submitted to WordPress.org for review
+
+== Copyright ==
+
+Rock Star WordPress Theme, Copyright 2016 Catchthemes.com
+Rock Star is distributed under the terms of the GNU General Public License v3
+
+== Resources ==
+
+* Images used are released under the CC0 license
+1. Screenshot Image
+    https://unsplash.com/photos/FgKuQ-ImdSE
+2. Slider Images
+    - slider-01-1920x1080.jpg: screenshot image
+    - slider-02-1920x1080.jpg: https://pixabay.com/en/guitar-classical-guitar-756326/
+3. Featured Content Images
+    - blog-01-420x280.jpg: https://pixabay.com/en/guitar-classical-guitar-756326/
+    - blog-02-420x280.jpg: https://pixabay.com/en/shoes-depend-leash-sky-beautiful-93756/
+    - blog-03-420x280.jpg: https://unsplash.com/photos/C1tnzdAmPE8
+4. Default Header Image
+    - header-1920x600.jpg: https://unsplash.com/photos/GrIty4BNJEE
+5. Background Images
+    - Dark and light: background-light-1920x1080.jpg and background-dark-1920x1080.jpg
+        - https://pixabay.com/en/music-locally-hamburg-harbor-locally-1286816/
+6. Audio Widget image
+    - audio-image-180x180.jpg: https://pixabay.com/en/guitar-music-sound-show-band-907654/
+7. All other images are self shot image by (CatchThemes.com)
+
+* Font Icons
+    Genericons by Automattic, Inc.
+    Genericons is Licensed under the GPL, version 2 or later
+    http://genericons.com/
+
+* JS Files
+    HTML5-Shiv is Licensed under the MIT and GPL licenses
+    https://code.google.com/p/html5shiv/
+
+    jQuery Cycle 2 is Licensed under the MIT and GPL licenses
+    http://jquery.malsup.com/cycle2/
+
+    fitvids is Licensed under the  WTFPL license
+    http://fitvidsjs.com/
+
