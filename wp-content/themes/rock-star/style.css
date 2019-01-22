@@ -994,7 +994,7 @@ input[type="reset"],
 input[type="submit"] {
 	border: 1px solid #fff;
 	border-radius: 3px;
-	background-color: #eee;
+	background-color: #FFFE54;
 	box-shadow: none;
 	color: #222;
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
